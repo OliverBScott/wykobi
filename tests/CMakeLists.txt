@@ -1,0 +1,5 @@
+set(TEST ${CMAKE_PROJECT_NAME}_test)
+file(GLOB_RECURSE TEST_SOURCES LIST_DIRECTORIES false *.h *.cpp)
+add_executable(${TEST} ${TEST_SOURCES})
+add_test(NAME ${TEST} COMMAND ${TEST})
+target_link_libraries(${TEST} PUBLIC wykobi::wykobi gtest)
