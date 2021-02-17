@@ -43,9 +43,9 @@ namespace wykobi
    #endif
 
    /*************[ Epsilon constants ]*************/
-   static const Float Epsilon_High      = 1.0E-16;
-   static const Float Epsilon_Medium    = 1.0E-10;
-   static const Float Epsilon_Low       = 1.0E-07;
+   static const Float Epsilon_High      = std::numeric_limits<long double>::epsilon();
+   static const Float Epsilon_Medium    = std::numeric_limits<double>::epsilon();
+   static const Float Epsilon_Low       = std::numeric_limits<float>::epsilon();
    static const Float Epsilon           = std::numeric_limits<Float>::epsilon();
    static const Float Infinity          = std::numeric_limits<Float>::infinity();
 
