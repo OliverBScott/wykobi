@@ -5,4 +5,6 @@ using ::testing::Test;
 using namespace wykobi;
 
 
-TEST(IntersectionTests, ){}
+TEST(IntersectionTests, segment_segment){
+    // test segment-segment intersections
+}

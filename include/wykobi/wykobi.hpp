@@ -86,6 +86,7 @@ namespace wykobi
       typedef       type& reference;
 
       point2d() : x(T(0.0)), y(T(0.0)){}
+      point2d(T _x, T _y) : x(_x), y(_y){}
       point2d(const pointnd<T,2>& point) : x(point[0]), y(point[1]){}
      ~point2d(){}
 
@@ -115,6 +116,7 @@ namespace wykobi
       typedef       Type& reference;
 
       point3d() : x(T(0.0)), y(T(0.0)), z(T(0.0)){}
+      point3d(T _x, T _y, T _z) : x(_x), y(_y), z(_z){}
       point3d(const pointnd<T,3>& point) : x(point[0]), y(point[1]), z(point[2]){}
      ~point3d(){}
 
